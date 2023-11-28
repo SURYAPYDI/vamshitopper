@@ -1,0 +1,158 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: black;
+} 
+
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    
+}
+
+.container h1{
+    text-align: center;
+    padding-top: 10%;
+    margin-bottom: 60px;
+    font-weight: 600;
+    position: relative;
+
+}
+
+.container h1::after {
+    content: '';
+    background: #303ef7;
+    width: 100px;
+    height: 5px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 30px;
+    
+    
+}
+
+.services {
+    text-align: center;
+   
+    padding: 25px 10px;
+    border: 2px solid aqua;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    transition: 0.3s;
+   
+}
+
+.services:hover {
+    background: #303ef7;
+    color: aliceblue;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+.s {
+    font-size: 2em;
+    color: #000;
+    user-select: none;
+}
+
+
+
+
+.bar a {
+    position: relative;
+    font-size: 1.1em;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.bar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transform-origin: right;
+}
+
+.bar a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.bar .click{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: aqua;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.bar .click:hover {
+    background: aqua;
+    color: #162938;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("gr.jpg");
+} 
+
+
+.h {
+    margin-top: 100px;
+}
